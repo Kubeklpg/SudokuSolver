@@ -119,6 +119,7 @@
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(20, 20);
             this.a1.TabIndex = 0;
+            this.a1.Text = "0";
             // 
             // a2
             // 
@@ -126,6 +127,7 @@
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(20, 20);
             this.a2.TabIndex = 1;
+            this.a2.Text = "0";
             // 
             // a3
             // 
@@ -133,6 +135,7 @@
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(20, 20);
             this.a3.TabIndex = 2;
+            this.a3.Text = "0";
             // 
             // b1
             // 
@@ -140,6 +143,7 @@
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(20, 20);
             this.b1.TabIndex = 3;
+            this.b1.Text = "0";
             // 
             // b2
             // 
@@ -147,6 +151,7 @@
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(20, 20);
             this.b2.TabIndex = 4;
+            this.b2.Text = "0";
             // 
             // b3
             // 
@@ -154,6 +159,7 @@
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(20, 20);
             this.b3.TabIndex = 5;
+            this.b3.Text = "0";
             // 
             // c1
             // 
@@ -161,6 +167,7 @@
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(20, 20);
             this.c1.TabIndex = 6;
+            this.c1.Text = "0";
             // 
             // c2
             // 
@@ -168,6 +175,7 @@
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(20, 20);
             this.c2.TabIndex = 7;
+            this.c2.Text = "0";
             // 
             // c3
             // 
@@ -175,6 +183,7 @@
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(20, 20);
             this.c3.TabIndex = 8;
+            this.c3.Text = "0";
             // 
             // solve
             // 
@@ -192,6 +201,7 @@
             this.c6.Name = "c6";
             this.c6.Size = new System.Drawing.Size(20, 20);
             this.c6.TabIndex = 18;
+            this.c6.Text = "0";
             // 
             // c5
             // 
@@ -199,6 +209,7 @@
             this.c5.Name = "c5";
             this.c5.Size = new System.Drawing.Size(20, 20);
             this.c5.TabIndex = 17;
+            this.c5.Text = "0";
             // 
             // c4
             // 
@@ -206,6 +217,7 @@
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(20, 20);
             this.c4.TabIndex = 16;
+            this.c4.Text = "0";
             // 
             // b6
             // 
@@ -213,6 +225,7 @@
             this.b6.Name = "b6";
             this.b6.Size = new System.Drawing.Size(20, 20);
             this.b6.TabIndex = 15;
+            this.b6.Text = "0";
             // 
             // b5
             // 
@@ -220,6 +233,7 @@
             this.b5.Name = "b5";
             this.b5.Size = new System.Drawing.Size(20, 20);
             this.b5.TabIndex = 14;
+            this.b5.Text = "0";
             // 
             // b4
             // 
@@ -227,6 +241,7 @@
             this.b4.Name = "b4";
             this.b4.Size = new System.Drawing.Size(20, 20);
             this.b4.TabIndex = 13;
+            this.b4.Text = "0";
             // 
             // a6
             // 
@@ -234,6 +249,7 @@
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(20, 20);
             this.a6.TabIndex = 12;
+            this.a6.Text = "0";
             // 
             // a5
             // 
@@ -241,6 +257,7 @@
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(20, 20);
             this.a5.TabIndex = 11;
+            this.a5.Text = "0";
             // 
             // a4
             // 
@@ -248,6 +265,7 @@
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(20, 20);
             this.a4.TabIndex = 10;
+            this.a4.Text = "0";
             // 
             // c9
             // 
@@ -255,6 +273,7 @@
             this.c9.Name = "c9";
             this.c9.Size = new System.Drawing.Size(20, 20);
             this.c9.TabIndex = 27;
+            this.c9.Text = "0";
             // 
             // c8
             // 
@@ -262,6 +281,7 @@
             this.c8.Name = "c8";
             this.c8.Size = new System.Drawing.Size(20, 20);
             this.c8.TabIndex = 26;
+            this.c8.Text = "0";
             // 
             // c7
             // 
@@ -269,6 +289,7 @@
             this.c7.Name = "c7";
             this.c7.Size = new System.Drawing.Size(20, 20);
             this.c7.TabIndex = 25;
+            this.c7.Text = "0";
             // 
             // b9
             // 
@@ -276,6 +297,7 @@
             this.b9.Name = "b9";
             this.b9.Size = new System.Drawing.Size(20, 20);
             this.b9.TabIndex = 24;
+            this.b9.Text = "0";
             // 
             // b8
             // 
@@ -283,6 +305,7 @@
             this.b8.Name = "b8";
             this.b8.Size = new System.Drawing.Size(20, 20);
             this.b8.TabIndex = 23;
+            this.b8.Text = "0";
             // 
             // b7
             // 
@@ -290,6 +313,7 @@
             this.b7.Name = "b7";
             this.b7.Size = new System.Drawing.Size(20, 20);
             this.b7.TabIndex = 22;
+            this.b7.Text = "0";
             // 
             // a9
             // 
@@ -297,6 +321,7 @@
             this.a9.Name = "a9";
             this.a9.Size = new System.Drawing.Size(20, 20);
             this.a9.TabIndex = 21;
+            this.a9.Text = "0";
             // 
             // a8
             // 
@@ -304,6 +329,7 @@
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(20, 20);
             this.a8.TabIndex = 20;
+            this.a8.Text = "0";
             // 
             // a7
             // 
@@ -311,6 +337,7 @@
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(20, 20);
             this.a7.TabIndex = 19;
+            this.a7.Text = "0";
             // 
             // f3
             // 
@@ -318,6 +345,7 @@
             this.f3.Name = "f3";
             this.f3.Size = new System.Drawing.Size(20, 20);
             this.f3.TabIndex = 36;
+            this.f3.Text = "0";
             // 
             // f2
             // 
@@ -325,6 +353,7 @@
             this.f2.Name = "f2";
             this.f2.Size = new System.Drawing.Size(20, 20);
             this.f2.TabIndex = 35;
+            this.f2.Text = "0";
             // 
             // f1
             // 
@@ -332,6 +361,7 @@
             this.f1.Name = "f1";
             this.f1.Size = new System.Drawing.Size(20, 20);
             this.f1.TabIndex = 34;
+            this.f1.Text = "0";
             // 
             // e3
             // 
@@ -339,6 +369,7 @@
             this.e3.Name = "e3";
             this.e3.Size = new System.Drawing.Size(20, 20);
             this.e3.TabIndex = 33;
+            this.e3.Text = "0";
             // 
             // e2
             // 
@@ -346,6 +377,7 @@
             this.e2.Name = "e2";
             this.e2.Size = new System.Drawing.Size(20, 20);
             this.e2.TabIndex = 32;
+            this.e2.Text = "0";
             // 
             // e1
             // 
@@ -353,6 +385,7 @@
             this.e1.Name = "e1";
             this.e1.Size = new System.Drawing.Size(20, 20);
             this.e1.TabIndex = 31;
+            this.e1.Text = "0";
             // 
             // d3
             // 
@@ -360,6 +393,7 @@
             this.d3.Name = "d3";
             this.d3.Size = new System.Drawing.Size(20, 20);
             this.d3.TabIndex = 30;
+            this.d3.Text = "0";
             // 
             // d2
             // 
@@ -367,6 +401,7 @@
             this.d2.Name = "d2";
             this.d2.Size = new System.Drawing.Size(20, 20);
             this.d2.TabIndex = 29;
+            this.d2.Text = "0";
             // 
             // d1
             // 
@@ -374,6 +409,7 @@
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(20, 20);
             this.d1.TabIndex = 28;
+            this.d1.Text = "0";
             // 
             // f6
             // 
@@ -381,6 +417,7 @@
             this.f6.Name = "f6";
             this.f6.Size = new System.Drawing.Size(20, 20);
             this.f6.TabIndex = 45;
+            this.f6.Text = "0";
             // 
             // f5
             // 
@@ -388,6 +425,7 @@
             this.f5.Name = "f5";
             this.f5.Size = new System.Drawing.Size(20, 20);
             this.f5.TabIndex = 44;
+            this.f5.Text = "0";
             // 
             // f4
             // 
@@ -395,6 +433,7 @@
             this.f4.Name = "f4";
             this.f4.Size = new System.Drawing.Size(20, 20);
             this.f4.TabIndex = 43;
+            this.f4.Text = "0";
             // 
             // e6
             // 
@@ -402,6 +441,7 @@
             this.e6.Name = "e6";
             this.e6.Size = new System.Drawing.Size(20, 20);
             this.e6.TabIndex = 42;
+            this.e6.Text = "0";
             // 
             // e5
             // 
@@ -409,6 +449,7 @@
             this.e5.Name = "e5";
             this.e5.Size = new System.Drawing.Size(20, 20);
             this.e5.TabIndex = 41;
+            this.e5.Text = "0";
             // 
             // e4
             // 
@@ -416,6 +457,7 @@
             this.e4.Name = "e4";
             this.e4.Size = new System.Drawing.Size(20, 20);
             this.e4.TabIndex = 40;
+            this.e4.Text = "0";
             // 
             // d6
             // 
@@ -423,6 +465,7 @@
             this.d6.Name = "d6";
             this.d6.Size = new System.Drawing.Size(20, 20);
             this.d6.TabIndex = 39;
+            this.d6.Text = "0";
             // 
             // d5
             // 
@@ -430,6 +473,7 @@
             this.d5.Name = "d5";
             this.d5.Size = new System.Drawing.Size(20, 20);
             this.d5.TabIndex = 38;
+            this.d5.Text = "0";
             // 
             // d4
             // 
@@ -437,6 +481,7 @@
             this.d4.Name = "d4";
             this.d4.Size = new System.Drawing.Size(20, 20);
             this.d4.TabIndex = 37;
+            this.d4.Text = "0";
             // 
             // f9
             // 
@@ -444,6 +489,7 @@
             this.f9.Name = "f9";
             this.f9.Size = new System.Drawing.Size(20, 20);
             this.f9.TabIndex = 54;
+            this.f9.Text = "0";
             // 
             // f8
             // 
@@ -451,6 +497,7 @@
             this.f8.Name = "f8";
             this.f8.Size = new System.Drawing.Size(20, 20);
             this.f8.TabIndex = 53;
+            this.f8.Text = "0";
             // 
             // f7
             // 
@@ -458,6 +505,7 @@
             this.f7.Name = "f7";
             this.f7.Size = new System.Drawing.Size(20, 20);
             this.f7.TabIndex = 52;
+            this.f7.Text = "0";
             // 
             // e9
             // 
@@ -465,6 +513,7 @@
             this.e9.Name = "e9";
             this.e9.Size = new System.Drawing.Size(20, 20);
             this.e9.TabIndex = 51;
+            this.e9.Text = "0";
             // 
             // e8
             // 
@@ -472,6 +521,7 @@
             this.e8.Name = "e8";
             this.e8.Size = new System.Drawing.Size(20, 20);
             this.e8.TabIndex = 50;
+            this.e8.Text = "0";
             // 
             // e7
             // 
@@ -479,6 +529,7 @@
             this.e7.Name = "e7";
             this.e7.Size = new System.Drawing.Size(20, 20);
             this.e7.TabIndex = 49;
+            this.e7.Text = "0";
             // 
             // d9
             // 
@@ -486,6 +537,7 @@
             this.d9.Name = "d9";
             this.d9.Size = new System.Drawing.Size(20, 20);
             this.d9.TabIndex = 48;
+            this.d9.Text = "0";
             // 
             // d8
             // 
@@ -493,6 +545,7 @@
             this.d8.Name = "d8";
             this.d8.Size = new System.Drawing.Size(20, 20);
             this.d8.TabIndex = 47;
+            this.d8.Text = "0";
             // 
             // d7
             // 
@@ -500,6 +553,7 @@
             this.d7.Name = "d7";
             this.d7.Size = new System.Drawing.Size(20, 20);
             this.d7.TabIndex = 46;
+            this.d7.Text = "0";
             // 
             // i3
             // 
@@ -507,6 +561,7 @@
             this.i3.Name = "i3";
             this.i3.Size = new System.Drawing.Size(20, 20);
             this.i3.TabIndex = 63;
+            this.i3.Text = "0";
             // 
             // i2
             // 
@@ -514,6 +569,7 @@
             this.i2.Name = "i2";
             this.i2.Size = new System.Drawing.Size(20, 20);
             this.i2.TabIndex = 62;
+            this.i2.Text = "0";
             // 
             // i1
             // 
@@ -521,6 +577,7 @@
             this.i1.Name = "i1";
             this.i1.Size = new System.Drawing.Size(20, 20);
             this.i1.TabIndex = 61;
+            this.i1.Text = "0";
             // 
             // h3
             // 
@@ -528,6 +585,7 @@
             this.h3.Name = "h3";
             this.h3.Size = new System.Drawing.Size(20, 20);
             this.h3.TabIndex = 60;
+            this.h3.Text = "0";
             // 
             // h2
             // 
@@ -535,6 +593,7 @@
             this.h2.Name = "h2";
             this.h2.Size = new System.Drawing.Size(20, 20);
             this.h2.TabIndex = 59;
+            this.h2.Text = "0";
             // 
             // h1
             // 
@@ -542,6 +601,7 @@
             this.h1.Name = "h1";
             this.h1.Size = new System.Drawing.Size(20, 20);
             this.h1.TabIndex = 58;
+            this.h1.Text = "0";
             // 
             // g3
             // 
@@ -549,6 +609,7 @@
             this.g3.Name = "g3";
             this.g3.Size = new System.Drawing.Size(20, 20);
             this.g3.TabIndex = 57;
+            this.g3.Text = "0";
             // 
             // g2
             // 
@@ -556,6 +617,7 @@
             this.g2.Name = "g2";
             this.g2.Size = new System.Drawing.Size(20, 20);
             this.g2.TabIndex = 56;
+            this.g2.Text = "0";
             // 
             // g1
             // 
@@ -563,6 +625,7 @@
             this.g1.Name = "g1";
             this.g1.Size = new System.Drawing.Size(20, 20);
             this.g1.TabIndex = 55;
+            this.g1.Text = "0";
             // 
             // i6
             // 
@@ -570,6 +633,7 @@
             this.i6.Name = "i6";
             this.i6.Size = new System.Drawing.Size(20, 20);
             this.i6.TabIndex = 72;
+            this.i6.Text = "0";
             // 
             // i5
             // 
@@ -577,6 +641,7 @@
             this.i5.Name = "i5";
             this.i5.Size = new System.Drawing.Size(20, 20);
             this.i5.TabIndex = 71;
+            this.i5.Text = "0";
             // 
             // i4
             // 
@@ -584,6 +649,7 @@
             this.i4.Name = "i4";
             this.i4.Size = new System.Drawing.Size(20, 20);
             this.i4.TabIndex = 70;
+            this.i4.Text = "0";
             // 
             // h6
             // 
@@ -591,6 +657,7 @@
             this.h6.Name = "h6";
             this.h6.Size = new System.Drawing.Size(20, 20);
             this.h6.TabIndex = 69;
+            this.h6.Text = "0";
             // 
             // h5
             // 
@@ -598,6 +665,7 @@
             this.h5.Name = "h5";
             this.h5.Size = new System.Drawing.Size(20, 20);
             this.h5.TabIndex = 68;
+            this.h5.Text = "0";
             // 
             // h4
             // 
@@ -605,6 +673,7 @@
             this.h4.Name = "h4";
             this.h4.Size = new System.Drawing.Size(20, 20);
             this.h4.TabIndex = 67;
+            this.h4.Text = "0";
             // 
             // g6
             // 
@@ -612,6 +681,7 @@
             this.g6.Name = "g6";
             this.g6.Size = new System.Drawing.Size(20, 20);
             this.g6.TabIndex = 66;
+            this.g6.Text = "0";
             // 
             // g5
             // 
@@ -619,6 +689,7 @@
             this.g5.Name = "g5";
             this.g5.Size = new System.Drawing.Size(20, 20);
             this.g5.TabIndex = 65;
+            this.g5.Text = "0";
             // 
             // g4
             // 
@@ -626,6 +697,7 @@
             this.g4.Name = "g4";
             this.g4.Size = new System.Drawing.Size(20, 20);
             this.g4.TabIndex = 64;
+            this.g4.Text = "0";
             // 
             // i9
             // 
@@ -633,6 +705,7 @@
             this.i9.Name = "i9";
             this.i9.Size = new System.Drawing.Size(20, 20);
             this.i9.TabIndex = 81;
+            this.i9.Text = "0";
             // 
             // i8
             // 
@@ -640,6 +713,7 @@
             this.i8.Name = "i8";
             this.i8.Size = new System.Drawing.Size(20, 20);
             this.i8.TabIndex = 80;
+            this.i8.Text = "0";
             // 
             // i7
             // 
@@ -647,6 +721,7 @@
             this.i7.Name = "i7";
             this.i7.Size = new System.Drawing.Size(20, 20);
             this.i7.TabIndex = 79;
+            this.i7.Text = "0";
             // 
             // h9
             // 
@@ -654,6 +729,7 @@
             this.h9.Name = "h9";
             this.h9.Size = new System.Drawing.Size(20, 20);
             this.h9.TabIndex = 78;
+            this.h9.Text = "0";
             // 
             // h8
             // 
@@ -661,6 +737,7 @@
             this.h8.Name = "h8";
             this.h8.Size = new System.Drawing.Size(20, 20);
             this.h8.TabIndex = 77;
+            this.h8.Text = "0";
             // 
             // h7
             // 
@@ -668,6 +745,7 @@
             this.h7.Name = "h7";
             this.h7.Size = new System.Drawing.Size(20, 20);
             this.h7.TabIndex = 76;
+            this.h7.Text = "0";
             // 
             // g9
             // 
@@ -675,6 +753,7 @@
             this.g9.Name = "g9";
             this.g9.Size = new System.Drawing.Size(20, 20);
             this.g9.TabIndex = 75;
+            this.g9.Text = "0";
             // 
             // g8
             // 
@@ -682,6 +761,7 @@
             this.g8.Name = "g8";
             this.g8.Size = new System.Drawing.Size(20, 20);
             this.g8.TabIndex = 74;
+            this.g8.Text = "0";
             // 
             // g7
             // 
@@ -689,6 +769,7 @@
             this.g7.Name = "g7";
             this.g7.Size = new System.Drawing.Size(20, 20);
             this.g7.TabIndex = 73;
+            this.g7.Text = "0";
             // 
             // label1
             // 

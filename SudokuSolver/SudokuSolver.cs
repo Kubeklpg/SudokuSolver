@@ -17,9 +17,8 @@ namespace SudokuSolver
             InitializeComponent();
         }
 
-        private void solve_Click(object sender, EventArgs e)
+        private int[,] CreateMatrix()
         {
-
             int[,] tab = new int[9,9];
             tab[0,0] =  Convert.ToInt32(a1.Text);
             tab[0, 1] = Convert.ToInt32(a2.Text);
@@ -111,8 +110,58 @@ namespace SudokuSolver
             tab[8, 7] = Convert.ToInt32(i8.Text);
             tab[8, 8] = Convert.ToInt32(i9.Text);
             //---------------------------------
+            return tab;
+        }
+        private void solve_Click(object sender, EventArgs e)
+        {
 
+            int [,] array = CreateMatrix();
+            bool state = CheckIfValid(array);
+            if (state)
+            {
+                label1.Text = "jest git";
+            }
+            else label1.Text = "nie jest git";
 
+            // brute force algorithm
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+
+                }
+            }
+
+        }
+
+        public bool CheckIfValid( int[,] tab )
+        {
+            int valid = 0;
+
+            int k = 0;
+            for(int i = 0 ; i < 9; i++)
+            {
+                int x = tab[i, k];
+                for( int j = 0; j < 9; j++)
+                {
+                    if(x == tab[i, j] || x == tab[j,i])
+                    {
+                        valid++;
+                    }
+                    
+                }
+                k++;
+            }
+            if (valid == 9)
+            {
+                return true;
+            }
+            else return false;
         }
     }
 }
+
+
+
+
