@@ -111,6 +111,7 @@
             this.solve.TabIndex = 9;
             this.solve.Text = "Solve";
             this.solve.UseVisualStyleBackColor = true;
+            this.solve.Click += new System.EventHandler(this.solve_Click);
             // 
             // SudokuSolver
             // 
