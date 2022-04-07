@@ -12,6 +12,7 @@ namespace SudokuSolver
 {
     public partial class SudokuSolver : Form
     {
+        int boardSize = 9;
         public SudokuSolver()
         {
             InitializeComponent();
@@ -214,18 +215,23 @@ namespace SudokuSolver
 
             int [,] array = CreateMatrix();
             
-            
+            bool done = Solve(array);
+            if (done)
+            {
+                label1.Text = "Done";
+                PrintMatrix(array);
+            }
            
            
 
         }
         
-        public bool CheckIfValidRow(int[,] tab,int number, int indexX)
+        private bool CheckIfValidRow(int[,] tab,int number, int row)
         {
             bool state = false;
-            for(int i = 0; i < tab.GetLength(0); i++)
+            for(int i = 0; i < boardSize; i++)
             {
-                if (tab[indexX, i] == number)
+                if (tab[row, i] == number)
                 {
                     state = false;
                 }
@@ -233,12 +239,12 @@ namespace SudokuSolver
             }
             return state;
         }
-        public bool CheckIfValidColumn(int[,] tab, int number, int indexY)
+        private bool CheckIfValidColumn(int[,] tab, int number, int column)
         {
             bool state = false;
-            for (int i = 0; i < tab.GetLength(0); i++)
+            for (int i = 0; i < boardSize; i++)
             {
-                if (tab[i,indexY] == number)
+                if (tab[i,column] == number)
                 {
                     state = false;
                 }
@@ -246,14 +252,14 @@ namespace SudokuSolver
             }
             return state;
         }
-        public bool CheckIfValidBox(int[,] tab, int number,int indexX, int indexY)
+        private bool CheckIfValidBox(int[,] tab, int number,int row, int column)
         {
-            int smolY = indexY - indexY % 3;
-            int smolX = indexX - indexX % 3;
+            int smolRow = row - row % 3;
+            int smolColumn = column - column % 3;
             bool state = false;
-            for (int i = smolX; i < 3; i++)
+            for (int i = smolRow; i < 3; i++)
             {
-                for(int j = smolY; j < 3 ; j++)
+                for(int j = smolColumn; j < 3 ; j++)
                 {
                     if (tab[i, j] == number)
                     {
@@ -264,18 +270,37 @@ namespace SudokuSolver
             }
             return state;
         }
-        public bool CheckIfValid( int[,] tab, int number, int indexX, int indexY)
+        private bool CheckIfValid( int[,] tab, int number, int row, int column)
         {
-            bool final = CheckIfValidColumn(tab, number, indexY) & CheckIfValidRow(tab, number, indexX) & CheckIfValidBox(tab, number, indexX, indexY);
+            bool final = CheckIfValidColumn(tab, number, column) & CheckIfValidRow(tab, number, row) & CheckIfValidBox(tab, number, row, column);
             return final;        
         }
         private bool Solve(int[,] tab)
         {
-            for( int i = 0; i < tab.GetLength(0); i++)
+            for( int i = 0; i < boardSize; i++)
             {
-                for ( int j = 0; j < tab.GetLength(1); j++)
+                for ( int j = 0; j < boardSize; j++)
                 {
+                    if(tab[i,j] == 0)
+                    {
+                        for(int k = 1; k < 9; k++)
+                        {
+                            if (CheckIfValid(tab, k, i, j))
+                            {
+                                tab[i, j] = k;
 
+                                if (Solve(tab))
+                                {
+                                    return true;
+                                }
+                                else
+                                {
+                                    tab[i, j] = 0;
+                                }
+                            }
+                        }
+                        return false;
+                    }
                 }
             }
             return true;
