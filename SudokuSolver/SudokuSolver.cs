@@ -19,8 +19,10 @@ namespace SudokuSolver
 
         private int[,] CreateMatrix()
         {
-            int[,] tab = new int[9,9];
-            tab[0,0] =  Convert.ToInt32(a1.Text);
+            int[,] tab = new int[9, 9];
+            
+            
+            tab[0, 0] = Convert.ToInt32(a1.Text);
             tab[0, 1] = Convert.ToInt32(a2.Text);
             tab[0, 2] = Convert.ToInt32(a3.Text);
             tab[0, 3] = Convert.ToInt32(a4.Text);
@@ -112,53 +114,173 @@ namespace SudokuSolver
             //---------------------------------
             return tab;
         }
+
+        private void PrintMatrix(int[,] arr)
+        {
+            a1.Text = arr[0, 0].ToString();
+            a2.Text = arr[0, 1].ToString();
+            a3.Text = arr[0, 2].ToString();
+            a4.Text = arr[0, 3].ToString();
+            a5.Text = arr[0, 4].ToString();
+            a6.Text = arr[0, 5].ToString();
+            a7.Text = arr[0, 6].ToString();
+            a8.Text = arr[0, 7].ToString();
+            a9.Text = arr[0, 8].ToString();
+            //============================
+            b1.Text = arr[1, 0].ToString();
+            b2.Text = arr[1, 1].ToString();
+            b3.Text = arr[1, 2].ToString();
+            b4.Text = arr[1, 3].ToString();
+            b5.Text = arr[1, 4].ToString();
+            b6.Text = arr[1, 5].ToString();
+            b7.Text = arr[1, 6].ToString();
+            b8.Text = arr[1, 7].ToString();
+            b9.Text = arr[1, 8].ToString();
+            //===========================
+            c1.Text = arr[2, 0].ToString();
+            c2.Text = arr[2, 1].ToString();
+            c3.Text = arr[2, 2].ToString();
+            c4.Text = arr[2, 3].ToString();
+            c5.Text = arr[2, 4].ToString();
+            c6.Text = arr[2, 5].ToString();
+            c7.Text = arr[2, 6].ToString();
+            c8.Text = arr[2, 7].ToString();
+            c9.Text = arr[2, 8].ToString();
+            //===========================
+            d1.Text = arr[3, 0].ToString();
+            d2.Text = arr[3, 1].ToString();
+            d3.Text = arr[3, 2].ToString();
+            d4.Text = arr[3, 3].ToString();
+            d5.Text = arr[3, 4].ToString();
+            d6.Text = arr[3, 5].ToString();
+            d7.Text = arr[3, 6].ToString();
+            d8.Text = arr[3, 7].ToString();
+            a9.Text = arr[3, 8].ToString();
+            //===========================
+            e1.Text = arr[4, 0].ToString();
+            e2.Text = arr[4, 1].ToString();
+            e3.Text = arr[4, 2].ToString();
+            e4.Text = arr[4, 3].ToString();
+            e5.Text = arr[4, 4].ToString();
+            e6.Text = arr[4, 5].ToString();
+            e7.Text = arr[4, 6].ToString();
+            e8.Text = arr[4, 7].ToString();
+            e9.Text = arr[4, 8].ToString();
+            //===========================
+            f1.Text = arr[5, 0].ToString();
+            f2.Text = arr[5, 1].ToString();
+            f3.Text = arr[5, 2].ToString();
+            f4.Text = arr[5, 3].ToString();
+            f5.Text = arr[5, 4].ToString();
+            f6.Text = arr[5, 5].ToString();
+            f7.Text = arr[5, 6].ToString();
+            f8.Text = arr[5, 7].ToString();
+            f9.Text = arr[5, 8].ToString();
+            //============================
+            g1.Text = arr[6, 0].ToString();
+            g2.Text = arr[6, 1].ToString();
+            g3.Text = arr[6, 2].ToString();
+            g4.Text = arr[6, 3].ToString();
+            g5.Text = arr[6, 4].ToString();
+            g6.Text = arr[6, 5].ToString();
+            g7.Text = arr[6, 6].ToString();
+            g8.Text = arr[6, 7].ToString();
+            g9.Text = arr[6, 8].ToString();
+            //============================
+            h1.Text = arr[7, 0].ToString();
+            h2.Text = arr[7, 1].ToString();
+            h3.Text = arr[7, 2].ToString();
+            h4.Text = arr[7, 3].ToString();
+            h5.Text = arr[7, 4].ToString();
+            h6.Text = arr[7, 5].ToString();
+            h7.Text = arr[7, 6].ToString();
+            h8.Text = arr[7, 7].ToString();
+            h9.Text = arr[7, 8].ToString();
+            //============================
+            i1.Text = arr[8, 0].ToString();
+            i2.Text = arr[8, 1].ToString();
+            i3.Text = arr[8, 2].ToString();
+            i4.Text = arr[8, 3].ToString();
+            i5.Text = arr[8, 4].ToString();
+            i6.Text = arr[8, 5].ToString();
+            i7.Text = arr[8, 6].ToString();
+            i8.Text = arr[8, 7].ToString();
+            i9.Text = arr[8, 8].ToString();
+        }
+
+        
         private void solve_Click(object sender, EventArgs e)
         {
 
             int [,] array = CreateMatrix();
-            bool state = CheckIfValid(array);
-            if (state)
-            {
-                label1.Text = "jest git";
-            }
-            else label1.Text = "nie jest git";
-
-            // brute force algorithm
-
-            for (int i = 0; i < 9; i++)
-            {
-                for (int j = 0; j < 9; j++)
-                {
-
-                }
-            }
+            
+            
+           
+           
 
         }
-
-        public bool CheckIfValid( int[,] tab )
+        
+        public bool CheckIfValidRow(int[,] tab,int number, int indexX)
         {
-            int valid = 0;
-
-            int k = 0;
-            for(int i = 0 ; i < 9; i++)
+            bool state = false;
+            for(int i = 0; i < tab.GetLength(0); i++)
             {
-                int x = tab[i, k];
-                for( int j = 0; j < 9; j++)
+                if (tab[indexX, i] == number)
                 {
-                    if(x == tab[i, j] || x == tab[j,i])
-                    {
-                        valid++;
-                    }
-                    
+                    state = false;
                 }
-                k++;
+                else state = true;
             }
-            if (valid == 9)
-            {
-                return true;
-            }
-            else return false;
+            return state;
         }
+        public bool CheckIfValidColumn(int[,] tab, int number, int indexY)
+        {
+            bool state = false;
+            for (int i = 0; i < tab.GetLength(0); i++)
+            {
+                if (tab[i,indexY] == number)
+                {
+                    state = false;
+                }
+                else state = true;
+            }
+            return state;
+        }
+        public bool CheckIfValidBox(int[,] tab, int number,int indexX, int indexY)
+        {
+            int smolY = indexY - indexY % 3;
+            int smolX = indexX - indexX % 3;
+            bool state = false;
+            for (int i = smolX; i < 3; i++)
+            {
+                for(int j = smolY; j < 3 ; j++)
+                {
+                    if (tab[i, j] == number)
+                    {
+                        state = false;
+                    }
+                    else state = true;
+                }
+            }
+            return state;
+        }
+        public bool CheckIfValid( int[,] tab, int number, int indexX, int indexY)
+        {
+            bool final = CheckIfValidColumn(tab, number, indexY) & CheckIfValidRow(tab, number, indexX) & CheckIfValidBox(tab, number, indexX, indexY);
+            return final;        
+        }
+        private bool Solve(int[,] tab)
+        {
+            for( int i = 0; i < tab.GetLength(0); i++)
+            {
+                for ( int j = 0; j < tab.GetLength(1); j++)
+                {
+
+                }
+            }
+            return true;
+        }
+        
     }
 }
 
