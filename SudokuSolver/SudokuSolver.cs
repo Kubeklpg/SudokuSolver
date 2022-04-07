@@ -156,7 +156,7 @@ namespace SudokuSolver
             d6.Text = arr[3, 5].ToString();
             d7.Text = arr[3, 6].ToString();
             d8.Text = arr[3, 7].ToString();
-            a9.Text = arr[3, 8].ToString();
+            d9.Text = arr[3, 8].ToString();
             //===========================
             e1.Text = arr[4, 0].ToString();
             e2.Text = arr[4, 1].ToString();
