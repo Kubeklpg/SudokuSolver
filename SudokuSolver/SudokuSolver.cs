@@ -225,77 +225,77 @@ namespace SudokuSolver
            
 
         }
-        
-        private bool CheckIfValidRow(int[,] tab,int number, int row)
+
+        private  bool isNumberInRow(int[,] board, int number, int row)
         {
-            bool state = false;
-            for(int i = 0; i < boardSize; i++)
-            {
-                if (tab[row, i] == number)
-                {
-                    state = false;
-                }
-                else state = true;
-            }
-            return state;
-        }
-        private bool CheckIfValidColumn(int[,] tab, int number, int column)
-        {
-            bool state = false;
             for (int i = 0; i < boardSize; i++)
             {
-                if (tab[i,column] == number)
+                if (board[row,i] == number)
                 {
-                    state = false;
-                }
-                else state = true;
-            }
-            return state;
-        }
-        private bool CheckIfValidBox(int[,] tab, int number,int row, int column)
-        {
-            int smolRow = row - row % 3;
-            int smolColumn = column - column % 3;
-            bool state = false;
-            for (int i = smolRow; i < 3; i++)
-            {
-                for(int j = smolColumn; j < 3 ; j++)
-                {
-                    if (tab[i, j] == number)
-                    {
-                        state = false;
-                    }
-                    else state = true;
+                    return true;
                 }
             }
-            return state;
+            return false;
         }
-        private bool CheckIfValid( int[,] tab, int number, int row, int column)
-        {
-            bool final = CheckIfValidColumn(tab, number, column) & CheckIfValidRow(tab, number, row) & CheckIfValidBox(tab, number, row, column);
-            return final;        
-        }
-        private bool Solve(int[,] tab)
-        {
-            for( int i = 0; i < boardSize; i++)
-            {
-                for ( int j = 0; j < boardSize; j++)
-                {
-                    if(tab[i,j] == 0)
-                    {
-                        for(int k = 1; k < 9; k++)
-                        {
-                            if (CheckIfValid(tab, k, i, j))
-                            {
-                                tab[i, j] = k;
 
-                                if (Solve(tab))
+        private  bool isNumberInColumn(int[,] board, int number, int column)
+        {
+            for (int i = 0; i < boardSize; i++)
+            {
+                if (board[i,column] == number)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private  bool isNumberInBox(int[,] board, int number, int row, int column)
+        {
+           
+            int localBoxRow = row - row % 3;
+            int localBoxColumn = column - column % 3;
+
+            for (int i = localBoxRow; i < localBoxRow + 3; i++)
+            {
+                for (int j = localBoxColumn; j < localBoxColumn + 3; j++)
+                {
+                    if (board[i,j] == number)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        private  bool isValidPlacement(int[,] board, int number, int row, int column)
+        {
+            return !isNumberInRow(board, number, row) &&
+                !isNumberInColumn(board, number, column) &&
+                !isNumberInBox(board, number, row, column);
+        }
+        private  bool Solve(int[,] board)
+        {
+            for (int row = 0; row < boardSize; row++)
+            {
+                for (int column = 0; column < boardSize; column++)
+                {
+                    if (board[row,column] == 0)
+                    {
+                        for (int numberToTry = 1; numberToTry <= boardSize; numberToTry++)
+                        {
+                            if (isValidPlacement(board, numberToTry, row, column))
+                            {
+                                board[row,column] = numberToTry;
+
+                                if (Solve(board))
                                 {
                                     return true;
                                 }
                                 else
                                 {
-                                    tab[i, j] = 0;
+                                    board[row,column] = 0;
                                 }
                             }
                         }
@@ -305,6 +305,7 @@ namespace SudokuSolver
             }
             return true;
         }
+        
         
     }
 }
